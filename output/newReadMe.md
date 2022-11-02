@@ -1,9 +1,10 @@
 
-![badge](https://img.shields.io/badge/license-Open-brightgreen)<br />
+![badge](https://img.shields.io/badge/license-Apache-brightgreen)<br />
 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+- [Video](#video)
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
@@ -11,21 +12,24 @@
 - [Contact](#contact)
 
 ## Title
-ReadMe Generator
+Title
 ## Description
-This project uses the npm package inquirer to automatically generate a professional readme to use in your projects. Just answer the prompts and the readme generator does the rest!
+desc
 ## Installation
-To install you must first install the npm package inquirer. Then upload any screenshots or other media you wish to include in your final readme. 
+
 ## Screenshot
-![test logo image](../screenshot/test.png)
+![]()
+## Video
+![video walkthrough] 
+(https://app.castify.com/view/c6940e9d-8e28-4963-85ae-ffa0f8a7a287)
 ## Usage
-Run this project in node.js and answer the prompts. 
+
 ## Contributing
-Eric Simmons
+
 ## Testing
-There are currently no tests that exist for this projects.
+
 ## License
-Open
+Apache
 ## Contact
-(https://www.github.com/eric-simmons "Github")
-erictomlinsonsimmons@gmail.com
+(https://www.github.com/ "Github")
+

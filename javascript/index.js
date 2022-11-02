@@ -2,7 +2,7 @@ import fs from 'fs'
 import inquirer from 'inquirer';
 
 
-const generateReadme = ({ title, description, screenshot, alttext, install, usage, contributing, test, license, username, email }) =>
+const generateReadme = ({ title, description, screenshot, alttext, video, install, usage, contributing, test, license, username, email }) =>
 
 
 `
@@ -11,6 +11,7 @@ const generateReadme = ({ title, description, screenshot, alttext, install, usag
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+- [Video](#video)
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
@@ -25,6 +26,8 @@ ${description}
 ${install}
 ## Screenshot
 ![${alttext}](${screenshot})
+## Video
+![video walkthrough](${video})
 ## Usage
 ${usage}
 ## Contributing
@@ -58,6 +61,11 @@ inquirer.prompt([
         type: "input",
         name: "alttext",
         message: "Brief description of the image for Alternate Text?"
+    },
+    {
+        type: "input",
+        name: "video",
+        message: "Provide the path to a video of your program!"
     },
     {
         type: "input",
