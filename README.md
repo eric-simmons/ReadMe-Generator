@@ -18,7 +18,7 @@ This project generates a professional readme markdown file for your next project
 ## Installation
 To install, download this package from github. Then npm install inquirer. Dont forget to .gitignore the node_modules folder. Then run the program using node.js
 ## Screenshot
-![test logo](../screenshot/test.png)
+![test logo](./screenshot/test.png)
 ## Video
 ![video walkthrough] (https://app.castify.com/view/c6940e9d-8e28-4963-85ae-ffa0f8a7a287)
 ## Usage
