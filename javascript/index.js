@@ -10,13 +10,13 @@ ${description}
 ## Installation
 ${install}
 ## Screenshot
-    ![${alttext}](${screenshot})
+![${alttext}](${screenshot})
 ## Usage
 ${usage}
 ## License
 ${license}
 ## Contact
-${username} on GitHub
+(https://www.github.com/${username} "Github")
 ${email}
 `
 
