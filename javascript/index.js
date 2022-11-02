@@ -4,19 +4,21 @@ import inquirer from 'inquirer';
 
 const generateReadme = ({ title, description, screenshot, alttext, install, usage, contributing, test, license, username, email }) =>
 
-`![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
+
+`
+![badge](https://img.shields.io/badge/license-${license}-brightgreen)<br />
 
 ## Table of Contents
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Contact](#Contact)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#testing)
+- [Contact](#contact)
 
-
-# <${title}>
+## Title
+${title}
 ## Description
 ${description}
 ## Installation
@@ -105,7 +107,6 @@ inquirer.prompt([
 ])
     .then((answers) => {
         const readmeContent = generateReadme(answers)
-        console.log(answers.license)
         fs.writeFile("../output/newReadMe.md", readmeContent, (error) => {
             if (error) throw error
             else console.log("Successfully created your ReadMe!")
