@@ -2,9 +2,21 @@ import fs from 'fs'
 import inquirer from 'inquirer';
 
 
-const generateReadme = ({ title, description, screenshot, alttext, install, usage, license, username, email }) =>
+const generateReadme = ({ title, description, screenshot, alttext, install, usage, contributing, test, license, username, email }) =>
 
-    `# <${title}>
+`![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
+
+## Table of Contents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Contact](#Contact)
+
+
+# <${title}>
 ## Description
 ${description}
 ## Installation
@@ -13,6 +25,10 @@ ${install}
 ![${alttext}](${screenshot})
 ## Usage
 ${usage}
+## Contributing
+${contributing}
+## Testing
+${test}
 ## License
 ${license}
 ## Contact
@@ -52,6 +68,16 @@ inquirer.prompt([
         message: "How is this project used?"
     },
     {
+        type: "input",
+        name: "contributing",
+        message: "Who are the contributors to this project?"
+    },
+    {
+        type: "input",
+        name: "test",
+        message: "What is the method for testing the program?"
+    },
+    {
         type: "list",
         name: "license",
         message: "Chose the appropriate license for this project: ",
@@ -79,6 +105,7 @@ inquirer.prompt([
 ])
     .then((answers) => {
         const readmeContent = generateReadme(answers)
+        console.log(answers.license)
         fs.writeFile("../output/newReadMe.md", readmeContent, (error) => {
             if (error) throw error
             else console.log("Successfully created your ReadMe!")
