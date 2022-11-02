@@ -27,7 +27,7 @@ ${install}
 ## Screenshot
 ![${alttext}](${screenshot})
 ## Video
-![video walkthrough](${video})
+(${video})
 ## Usage
 ${usage}
 ## Contributing
